@@ -2,7 +2,7 @@ package nl.spectrum.garage;
 
 import nl.spectrum.garage.domain.Car;
 
-public class App {
+public class Application {
 
     public static void main(String[] args) {
 
