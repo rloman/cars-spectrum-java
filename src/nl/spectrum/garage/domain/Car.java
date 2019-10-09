@@ -1,10 +1,12 @@
 package nl.spectrum.garage.domain;
 
-public class Car {
+import nl.spectrum.garage.inheritance.Vehicle;
+
+public class Car extends Vehicle /* extends Object */ {
 
     private String licensePlate;
     private double mileage;
-    private double price;
+
 
     public Car() {
 
@@ -14,14 +16,15 @@ public class Car {
         this.licensePlate = licensePlate;
     }
 
+    @Override
     public void drive() {
+        System.out.println("Driving Car");
         this.mileage++;
     }
 
+    @Override
     public void drive(double mileage){
-
         this.mileage += mileage;
-
     }
 
     public String getLicensePlate() {
@@ -36,11 +39,5 @@ public class Car {
         return mileage;
     }
 
-    public double getPrice() {
-        return price;
-    }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
 }
