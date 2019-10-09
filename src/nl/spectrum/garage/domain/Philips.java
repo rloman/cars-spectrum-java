@@ -1,5 +1,6 @@
 package nl.spectrum.garage.domain;
 
+// demo  / empty class
 public class Philips implements Televisie {
 
 
