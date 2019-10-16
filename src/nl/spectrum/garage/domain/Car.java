@@ -7,6 +7,8 @@ public class Car extends Vehicle /* extends Object */ {
     private String licensePlate;
     private double mileage;
 
+    public static int CARSINHOLLAND = 8_000_000;
+
 
     public Car() {
 
@@ -39,5 +41,28 @@ public class Car extends Vehicle /* extends Object */ {
         return mileage;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
+        Car car = (Car) o;
+
+        return licensePlate.equals(car.licensePlate);
+    }
+
+    /* altijd implementeren samen met equals, maar nu niet, vanwege het OCP karakter van hashCode
+    @Override
+    public int hashCode() {
+        return licensePlate.hashCode();
+
+    }
+    */
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "licensePlate='" + licensePlate + '\'' +
+                '}';
+    }
 }
