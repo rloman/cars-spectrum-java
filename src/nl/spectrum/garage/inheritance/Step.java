@@ -12,4 +12,8 @@ public class Step extends Vehicle {
     public void drive(double mileage) {
 
     }
+
+    public void driveStep() {
+        System.out.println("Driving step ...");
+    }
 }

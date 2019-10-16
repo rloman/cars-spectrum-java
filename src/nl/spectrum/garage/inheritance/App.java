@@ -45,6 +45,41 @@ public class App {
         System.out.println(s1.getPrice());
 
 
+        // ik maak hier een tijdens compile time: Vehicle
+        // ik heb dan tijdens runnen een Step (want ik new een Step)
+        Vehicle stepje = new Step();
+
+        // stepje heeft hier de vormen,
+        // Object, Vehicle, Step
+
+        // nu wil ik mijn 'stepje' als Step hebben en
+        // dat kan zomaar niet ... dan moet ik casten =>
+
+        if (stepje instanceof Step) {
+            Step deStepGecast = (Step) stepje;
+            deStepGecast.driveStep();
+        }
+
+//        Truck deStepGecast = (Truck) stepje;
+
+        double salary = 45_000_000;
+
+        int maandSalaris = (int) salary;
+
+        System.out.println(maandSalaris);
+
+        foo(stepje); // legal
+
+        bar(stepje); // legal
+
+    }
+
+
+    public static void foo(Object o) {
+
+    }
+
+    public static void bar(Vehicle v) {
 
     }
 }
