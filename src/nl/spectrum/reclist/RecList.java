@@ -43,6 +43,25 @@ public class RecList {
         }
     }
 
+    private int indexOf(Object o, int index) {
+        if(this.head == null) {
+            return -1;
+        }
+        else {
+            if(this.head.equals(o)) {
+                return index;
+            }
+            else {
+                return tail.indexOf(o, index+1);
+            }
+        }
+
+    }
+
+    public int indexOf(Object o) {
+        return indexOf(o, 0);
+    }
+
     public void print() {
 
         if (head != null) {
