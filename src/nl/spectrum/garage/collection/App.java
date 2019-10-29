@@ -39,7 +39,7 @@ public class App {
         // 1. Geen duplicaten
         // 2. Geen volgordelijkheid
 
-        Collections.sort(numbers);
+//        Collections.sort(numbers); // vout
 
     }
 }
