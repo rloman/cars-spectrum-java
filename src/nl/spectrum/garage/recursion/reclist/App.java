@@ -1,4 +1,4 @@
-package nl.spectrum.reclist;
+package nl.spectrum.garage.recursion.reclist;
 
 public class App {
 

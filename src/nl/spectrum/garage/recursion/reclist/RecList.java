@@ -1,4 +1,4 @@
-package nl.spectrum.reclist;
+package nl.spectrum.garage.recursion.reclist;
 
 public class RecList {
 
@@ -22,14 +22,7 @@ public class RecList {
             return false;
         }
         else {
-            /*
-            if(head.equals(o)) {
-                return true;
-            }
-            else {
-                return tail.contains(o);
-            }
-            */
+
             return head.equals(o) || tail.contains(o);
         }
     }
@@ -40,6 +33,14 @@ public class RecList {
         }
         else {
             return 1+tail.size();
+        }
+    }
+
+    public void print() {
+
+        if (head != null) {
+            System.out.println(head);
+            tail.print();
         }
     }
 
@@ -55,20 +56,10 @@ public class RecList {
                 return tail.indexOf(o, index+1);
             }
         }
-
     }
 
     public int indexOf(Object o) {
         return indexOf(o, 0);
     }
-
-    public void print() {
-
-        if (head != null) {
-            System.out.println(head);
-            tail.print();
-        }
-    }
-
 
 }
