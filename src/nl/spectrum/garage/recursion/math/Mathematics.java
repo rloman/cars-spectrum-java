@@ -1,4 +1,4 @@
-package nl.spectrum.math;
+package nl.spectrum.garage.recursion.math;
 
 public final class Mathematics {
 
