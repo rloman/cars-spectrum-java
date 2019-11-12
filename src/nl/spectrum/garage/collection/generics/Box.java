@@ -10,8 +10,4 @@ public class Box <E> {
     public void add(E e) {
         this.content.add(e);
     }
-
-
-
-
 }

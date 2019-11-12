@@ -10,7 +10,6 @@ public class TimeTable {
 
     public static void main(String[] args) {
 
-
         NavigableSet<String> timetable = new TreeSet<>();
 
         timetable.add("13:30");
@@ -30,6 +29,5 @@ public class TimeTable {
         NavigableSet<Jas> jasjes = new TreeSet<Jas>();
 
         jasjes.add(new Jas("Raymie"));
-
     }
 }
